@@ -26,4 +26,11 @@ class OrderStatusHistory extends Model
         'id_order',
         'id_status',
     ];
+
+    protected $with = ["status"];
+
+    public function status(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne('App\Models\OrderStatus', 'id', 'id_status');
+    }
 }

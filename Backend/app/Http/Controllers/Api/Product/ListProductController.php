@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\Product\ProductListResource;
 use Illuminate\Foundation\Http\FormRequest;
 use Src\Product\Application\ProductLister;
+use Symfony\Component\HttpFoundation\Response;
 
 class ListProductController extends Controller
 {
@@ -21,10 +22,19 @@ class ListProductController extends Controller
     {
         try {
             $products = $service->handle();
-//            dd($products->all());
-            return response(ProductListResource::collection($products->all()), 200);
-        } catch (\Throwable $error) {
-            throw $error;
+            return response([
+                'data'   => ProductListResource::collection($products->all()),
+                'error'  => null,
+                'status' => Response::HTTP_OK
+
+            ], 200);
+        } catch (\Exception $error) {
+            return response([
+                'data'   => null,
+                'error'  => $error->getMessage(),
+                'status' => Response::HTTP_BAD_REQUEST
+
+            ], 400);
         }
     }
 }

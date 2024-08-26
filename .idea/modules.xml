@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../InnovaSchool/.idea/InnovaSchool.iml" filepath="$PROJECT_DIR$/../InnovaSchool/.idea/InnovaSchool.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Lecom2023/.idea/Lecom2023.iml" filepath="$PROJECT_DIR$/../Lecom2023/.idea/Lecom2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../motovip/api/.idea/api.iml" filepath="$PROJECT_DIR$/../motovip/api/.idea/api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" filepath="$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" />
     </modules>
   </component>

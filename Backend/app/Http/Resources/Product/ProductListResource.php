@@ -21,7 +21,9 @@ class ProductListResource extends JsonResource
             'price' => $this->getPrice()->value(),
             'stock' => $this->getStock()->value(),
             'id_type_product' => $this->getTypeProductId()->value(),
+            'type_product' => $this->getTypeProduct()->value(),
             'id_unit_measurement' => $this->getUnitMeasurementId()->value(),
+            'unit_measurement' => $this->getUnitMeasurement()->value(),
             'tags' => $this->getTags()->withCommaToArray(),
         ];
     }

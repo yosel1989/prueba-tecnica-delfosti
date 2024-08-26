@@ -4,8 +4,13 @@ namespace App\Http\Requests\Order;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CreateOrderRequest extends FormRequest
+class GetOrderProductsRequest extends FormRequest
 {
+    protected function prepareForValidation()
+    {
+        $this->merge(['id' => $this->route('id')]);
+    }
+
     /**
      * Determine if the user is authorized to make this request.
      */
@@ -22,12 +27,7 @@ class CreateOrderRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id_vendor'             =>  'required|numeric',
-            'date_delivery'         =>  'required|date',
-            'detail'                =>  'present|array|size:1',
-            'detail.*.id_product'   =>  'required|numeric',
-            'detail.*.quantity'     =>  'required|numeric',
-            'detail.*.price'        =>  'required|numeric',
+            'id'                    => 'required|numeric',
         ];
     }
 }

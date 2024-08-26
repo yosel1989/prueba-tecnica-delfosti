@@ -45,5 +45,14 @@ class Product extends Model
             'stock'                 => 'integer',
         ];
     }
+
+    public function type_product(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne('App\Models\TypeProduct', 'id', 'type_product_id');
+    }
+    public function unit_measurement(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne('App\Models\UnitMeasurement', 'id', 'unit_measurement_id');
+    }
 }
 

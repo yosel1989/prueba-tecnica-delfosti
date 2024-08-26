@@ -26,7 +26,7 @@ class UserLister implements ServiceInterface
     {
         $list = new UserList();
         foreach ($this->repository->list() as $item) {
-            $list->add(new User(
+            $user = new User(
                 new NumInteger($item['id']),
                 new Text($item['code']),
                 new Text($item['name']),
@@ -37,7 +37,10 @@ class UserLister implements ServiceInterface
                 new Text(''),
                 new NumInteger($item['id_position']),
                 new NumInteger($item['id_rol']),
-            ));
+            );
+            $user->setPosition(new Text($item['position']['name']));
+            $user->setRol(new Text($item['rol']['name']));
+            $list->add($user);
         }
         return $list;
     }

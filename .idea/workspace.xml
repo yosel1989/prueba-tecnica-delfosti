@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5225c05a-544f-4dff-ba3e-7935a8a41aed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../motovip/api/database/seeders/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../motovip/api/database/seeders/UsersTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../motovip/api/resources/views/livewire/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../motovip/api/resources/views/livewire/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../motovip/api/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/../motovip/api/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Http/Controllers/Api/Product/ListProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Http/Controllers/Api/Product/ListProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Http/Controllers/Api/User/ListUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Http/Controllers/Api/User/ListUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Http/Requests/Order/CreateOrderRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Http/Requests/Order/CreateOrderRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Http/Resources/Product/ProductListResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Http/Resources/Product/ProductListResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Models/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Models/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Models/OrderStatusHistory.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Models/OrderStatusHistory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/app/Models/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Order/Application/ProductLister.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Order/Application/OrderLister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Order/Domain/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Order/Domain/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Order/Infrastructure/OrderRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Order/Infrastructure/OrderRepositoryEloquent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/OrderProduct/Application/ProductDeleter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/OrderProduct/Application/ProductLister.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/OrderProduct/Application/ProductUpdater.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Product/Application/ProductLister.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Product/Application/ProductLister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Product/Domain/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Product/Domain/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/Product/Infrastructure/ProductRepositoryEloquent.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/Product/Infrastructure/ProductRepositoryEloquent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/User/Application/UserLister.php" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/User/Application/UserLister.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +47,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -138,6 +170,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2kzW5b7HNMwlteNruJCXWphBHyv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -146,19 +179,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Backend/src/User/Application" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Backend/app/Http/Controllers/Api/Order" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="ts.external.directory.path" value="C:\Desarrollo\Lecom2023\plantilla\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\src\User\Application" />
-      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Controllers\Api\Auth" />
-      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Requests\Auth" />
+      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Controllers\Api\Order" />
+      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Requests\Order" />
       <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Resources\User" />
-      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Requests" />
+      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Resources" />
+      <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Desarrollo\prueba-tecnica-delfosti\Backend\app\Http\Controllers\Api\Auth" />
@@ -196,7 +230,7 @@
       <workItem from="1724479349669" duration="9963000" />
       <workItem from="1724525738190" duration="10231000" />
       <workItem from="1724546847217" duration="21767000" />
-      <workItem from="1724648711799" duration="5298000" />
+      <workItem from="1724648711799" duration="16092000" />
     </task>
     <servers />
   </component>

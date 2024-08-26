@@ -5,6 +5,7 @@ namespace Src\Order\Infrastructure;
 use App\Enums\OrderStatusEnum;
 use App\Models\Order as ModelsOrder;
 use App\Models\OrderStatusHistory;
+use Illuminate\Support\Facades\DB;
 use Src\Order\Domain\Order;
 use Src\Order\Domain\OrderRepositoryInterface;
 use Src\Shared\Domain\ValueObjects\NumInteger;
@@ -32,7 +33,12 @@ class OrderRepositoryEloquent implements OrderRepositoryInterface
 
     public function list(): array
     {
-        return ModelsOrder::all()->toArray();
+        return ModelsOrder::with('status', 'vendor', 'delivery', 'history')
+            ->select(
+                '*',
+                DB::raw("(SELECT SUM(order_product.price) FROM order_product WHERE id_order = order.id) as total")
+            )
+            ->get()->toArray();
     }
 
     public function updateStatusProgress(NumInteger $idOrder): void

@@ -15,5 +15,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Lecom2023" />
     <orderEntry type="module" module-name="InnovaSchool" />
+    <orderEntry type="module" module-name="api" />
   </component>
 </module>

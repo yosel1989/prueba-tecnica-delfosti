@@ -17,6 +17,8 @@ class Product
     private NumInteger $unitMeasurementId;
     private NumInteger $stock;
 
+    private Text $typeProduct;
+    private Text $unitMeasurement;
 
     /**
      * @param NumInteger $id
@@ -176,6 +178,40 @@ class Product
     {
         $this->stock = $stock;
     }
+
+    /**
+     * @return Text
+     */
+    public function getTypeProduct(): Text
+    {
+        return $this->typeProduct;
+    }
+
+    /**
+     * @param Text $typeProduct
+     */
+    public function setTypeProduct(Text $typeProduct): void
+    {
+        $this->typeProduct = $typeProduct;
+    }
+
+    /**
+     * @return Text
+     */
+    public function getUnitMeasurement(): Text
+    {
+        return $this->unitMeasurement;
+    }
+
+    /**
+     * @param Text $unitMeasurement
+     */
+    public function setUnitMeasurement(Text $unitMeasurement): void
+    {
+        $this->unitMeasurement = $unitMeasurement;
+    }
+
+
 
 
     public function toArray(): array{

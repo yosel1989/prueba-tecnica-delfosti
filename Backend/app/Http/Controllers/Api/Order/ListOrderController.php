@@ -1,33 +1,32 @@
 <?php
 
-namespace App\Http\Controllers\Api\User;
+namespace App\Http\Controllers\Api\Order;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\User\DeleteUserRequest;
-use App\Http\Resources\User\UserResource;
+use App\Http\Resources\Order\OrderListResource;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response as ResponseAlias;
 use Illuminate\Support\Facades\DB;
-use Src\User\Application\UserLister;
+use Src\Order\Application\OrderLister;
 
-class ListUserController extends Controller
+class ListOrderController extends Controller
 {
 
 
     /**
      * @param DeleteUserRequest $request
-     * @param UserLister $service
+     * @param OrderLister $service
      * @return \Illuminate\Container\Container|mixed|object
-     * @throws \Throwable
      */
-    public function __invoke(FormRequest $request, UserLister $service)
+    public function __invoke(FormRequest $request, OrderLister $service)
     {
         DB::beginTransaction();
         try {
-            $Users = $service->handle();
+            $orders = $service->handle();
             DB::commit();
             return response([
-                'data' => UserResource::collection($Users->all()),
+                'data' => OrderListResource::collection($orders->all()),
                 'error' => null,
                 'status' => ResponseAlias::HTTP_OK
             ], 200);

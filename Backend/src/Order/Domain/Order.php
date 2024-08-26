@@ -2,6 +2,7 @@
 
 namespace Src\Order\Domain;
 
+use Src\OrderHistory\Domain\OrderHistoryList;
 use Src\OrderProduct\Domain\OrderProductList;
 use Src\Shared\Domain\ValueObjects\NumFloat;
 use Src\Shared\Domain\ValueObjects\NumInteger;
@@ -17,10 +18,12 @@ class Order
     private NumInteger $idStatus;
 
     private OrderProductList $detail;
+    private OrderHistoryList $history;
 
     private User $vendor;
     private ?User $delivery;
     private Text $status;
+    private Text $createdAt;
     private NumFloat $total;
 
     /**
@@ -200,6 +203,39 @@ class Order
     {
         $this->total = $total;
     }
+
+    /**
+     * @return Text
+     */
+    public function getCreatedAt(): Text
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * @param Text $createdAt
+     */
+    public function setCreatedAt(Text $createdAt): void
+    {
+        $this->createdAt = $createdAt;
+    }
+
+    /**
+     * @return OrderHistoryList
+     */
+    public function getHistory(): OrderHistoryList
+    {
+        return $this->history;
+    }
+
+    /**
+     * @param OrderHistoryList $history
+     */
+    public function setHistory(OrderHistoryList $history): void
+    {
+        $this->history = $history;
+    }
+
 
 
 

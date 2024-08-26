@@ -27,7 +27,7 @@ class ProductLister implements ServiceInterface
     {
         $list = new ProductList();
         foreach ($this->repository->list() as $item) {
-            $list->add(new Product(
+            $product = new Product(
                 new NumInteger($item['id']),
                 new Text($item['sku']),
                 new Text($item['name']),
@@ -36,7 +36,10 @@ class ProductLister implements ServiceInterface
                 new NumFloat($item['price']),
                 new NumInteger($item['unit_measurement_id']),
                 new NumInteger($item['stock'])
-            ));
+            );
+            $product->setTypeProduct(new Text($item['type_product']['name']));
+            $product->setUnitMeasurement(new Text($item['unit_measurement']['name']));
+            $list->add($product);
         }
         return $list;
     }

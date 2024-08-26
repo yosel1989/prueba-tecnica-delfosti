@@ -28,6 +28,10 @@ class Order extends Model
         'id_status',
     ];
 
+    protected $appends = [
+        'total'
+    ];
+
     /**
      * Get the attributes that should be cast.
      *
@@ -41,6 +45,11 @@ class Order extends Model
             'date_delivery'   => 'string',
             'id_status'       => 'integer',
         ];
+    }
+
+    public function getTotalAttribute()
+    {
+        return OrderProduct::where('id_order', $this->id)->sum('price');
     }
 
     public function vendor(): \Illuminate\Database\Eloquent\Relations\HasOne
@@ -60,6 +69,11 @@ class Order extends Model
 
     public function history()
     {
-        return $this->hasMany('App\Models\OrderStatusHistory', 'id_order', 'id');
+        return $this->hasMany('App\Models\OrderStatusHistory', 'id_order', 'id')->with('status');
+    }
+
+    public function detail()
+    {
+        return $this->hasMany('App\Models\OrderProduct', 'id_order', 'id')->with('product');
     }
 }

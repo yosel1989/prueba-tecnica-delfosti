@@ -43,6 +43,6 @@ class ProductRepositoryEloquent implements ProductRepostioryInterface
 
     public function list(): array
     {
-        return ModelsProduct::all()->toArray();
+        return ModelsProduct::with('type_product', 'unit_measurement')->get()->toArray();
     }
 }
