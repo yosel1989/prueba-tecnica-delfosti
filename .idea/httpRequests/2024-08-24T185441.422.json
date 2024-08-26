@@ -1,0 +1,26 @@
+{
+  "message": "The sku field is required. (and 6 more errors)",
+  "errors": {
+    "sku": [
+      "The sku field is required."
+    ],
+    "name": [
+      "The name field is required."
+    ],
+    "type_product_id": [
+      "The type product id field is required."
+    ],
+    "tags": [
+      "The tags field is required."
+    ],
+    "price": [
+      "The price field is required."
+    ],
+    "unit_measurement_id": [
+      "The unit measurement id field is required."
+    ],
+    "stock": [
+      "The stock field is required."
+    ]
+  }
+}

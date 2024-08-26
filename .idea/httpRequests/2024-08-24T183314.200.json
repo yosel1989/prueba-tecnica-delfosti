@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "sku": "SK-0824080813",
+    "name": "Producto 0824080813",
+    "price": 26.84,
+    "stock": 2,
+    "id_type_product": 2,
+    "id_unit_measurement": 2,
+    "tags": [
+      "limpieza",
+      "detergente"
+    ]
+  },
+  {
+    "id": 2,
+    "sku": "SK-0824080816",
+    "name": "Producto 0824080816",
+    "price": 13.33,
+    "stock": 4,
+    "id_type_product": 3,
+    "id_unit_measurement": 3,
+    "tags": [
+      "limpieza",
+      "detergente"
+    ]
+  },
+  {
+    "id": 3,
+    "sku": "SK-0824080817",
+    "name": "Producto 0824080817",
+    "price": 70.11,
+    "stock": 9,
+    "id_type_product": 2,
+    "id_unit_measurement": 2,
+    "tags": [
+      "limpieza",
+      "detergente"
+    ]
+  },
+  {
+    "id": 4,
+    "sku": "SK-0824080818",
+    "name": "Producto 0824080818",
+    "price": 42.03,
+    "stock": 8,
+    "id_type_product": 2,
+    "id_unit_measurement": 1,
+    "tags": [
+      "limpieza",
+      "detergente"
+    ]
+  }
+]

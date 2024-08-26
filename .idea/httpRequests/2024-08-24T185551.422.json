@@ -1,0 +1,14 @@
+{
+  "message": "The id vendor field is required. (and 2 more errors)",
+  "errors": {
+    "id_vendor": [
+      "The id vendor field is required."
+    ],
+    "date_delivery": [
+      "The date delivery field is required."
+    ],
+    "detail": [
+      "The detail field must be present."
+    ]
+  }
+}

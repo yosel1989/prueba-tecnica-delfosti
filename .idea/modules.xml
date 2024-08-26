@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../InnovaSchool/.idea/InnovaSchool.iml" filepath="$PROJECT_DIR$/../InnovaSchool/.idea/InnovaSchool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Lecom2023/.idea/Lecom2023.iml" filepath="$PROJECT_DIR$/../Lecom2023/.idea/Lecom2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" filepath="$PROJECT_DIR$/.idea/prueba-tecnica-delfosti.iml" />
+    </modules>
+  </component>
+</project>
